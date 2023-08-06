@@ -1,0 +1,153 @@
+:root {
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cards {
+  font-family: "Big Shoulders Display", cursive;
+  width: 100%;
+  height: fit-content;
+}
+
+.container {
+  margin: 0 auto;
+  height: fit-content;
+  width: 95%;
+}
+
+.card-holder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1,
+.card2,
+.card3 {
+  margin-top: 120px;
+  padding: 30px 35px;
+  height: 65vh;
+  width: 22%;
+  color: white;
+}
+@media only screen and (max-width: 1440px) {
+  .card1,
+  .card2,
+  .card3{
+    height: 80vh;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .card1,
+  .card2,
+  .card3{
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .card-holder{
+    flex-direction: column;
+    margin: 40px 0;
+  }
+  .card1,
+  .card2,
+  .card3{
+    height: 79.5vh;
+    width: 80%;
+    margin: 0px 12px;
+    padding: 15px 30px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .card-holder{
+    flex-direction: column;
+    margin: 40px 0;
+  }
+  .card1,
+  .card2,
+  .card3{
+    height: 79.5vh;
+    width: 90%;
+    margin: 0px 12px;
+    padding: 15px 20px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .card-holder{
+    flex-direction: column;
+    margin: 40px 0;
+  }
+  .card1,
+  .card2,
+  .card3{
+    height: 79.5vh;
+    width: 90%;
+    margin: 0px 12px;
+    padding: 10px 20px;
+  }
+}
+
+.card1 {
+  background-color: var(--brightOrange);
+}
+.card2 {
+  background-color: var(--darkCyan);
+}
+.card3 {
+  background-color: var(--veryDarkCyan);
+}
+
+.card1 img,
+.card2 img,
+.card3 img {
+  margin-bottom: 15px;
+}
+
+.card1 h2,
+.card2 h2,
+.card3 h2 {
+  margin-bottom: 15px;
+}
+
+.card1 p,
+.card2 p,
+.card3 p {
+  margin-bottom: 15px;
+}
+
+.learnMore1 a,
+.learnMore2 a,
+.learnMore3 a {
+  padding: 8px 15px;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  border: none;
+}
+
+.learnMore1 a{
+  color: var(--brightOrange);
+}
+
+.learnMore2 a{
+  color: var(--darkCyan);
+}
+
+.learnMore3 a{
+  color: var(--veryDarkCyan);
+}
+
+.learnMore1,
+.learnMore2,
+.learnMore3{
+  margin-top: 5em;
+}
+
+
